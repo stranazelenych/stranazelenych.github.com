@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Status služeb Strany zelených</title>
+        <title>Stav služeb Strany zelených</title>
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="bootstrap.min.css">
@@ -20,26 +20,71 @@
     <body>
         <div class="jumbotron">
             <div class="container">
-                <h1>Status služeb Strany zelených</h1>
-                <p>Zde najdete stav jednotlivých IT služeb SZ</p>
+                <h1>
+                    <img src="logo.svg" width="78" style="vertical-align:top;">
+                    Stav IT služeb Strany zelených
+                    <span class="badge">aktualizováno 2.&nbsp;9.&nbsp;2015 19.00</span>
+                </h1>
+                <p>Stavy jsou aktualizovány ručně.<br>Pokud si myslíte, že některý stav neodpovídá skutečnosti, nahlašte to na <a href="mailto:it@zeleni.cz">it@zeleni.cz</a> Díky!</p>
+                <p><small>Zde se řeší pouze zda služba <i>technicky</i> funguje. Nikoli zda je např. na webových stránkách uvedeno správné telefonní číslo.<br> Takové připomínky posílejte prosím Evě Kubátové na eva.kubatova@zeleni.cz</small></p>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h2>E-mail</h2>
+                    <div class="panel panel-warning">
+                        <div class="panel-heading"><h2 class="panel-title">Zelené maily</h2></div>
+                        <div class="panel-body">
+                            <strong>E-mail není jedna služba a může se stát, že problémy má pouze některá část.</strong>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-success"><span class="badge">OK</span> Webmail <a href="http://mail.zeleni.cz">http://mail.zeleni.cz</a></li>
+                            <li class="list-group-item list-group-item-success"><span class="badge">OK</span> Webmail <a href="http://m.i.zeleni.cz">http://m.i.zeleni.cz</a></li>
+                            <li class="list-group-item list-group-item-warning"><span class="badge">mohou nastat krátkodobé výpadky</span> POP3 (přijímání mailů pomocí klienta)</li>
+                            <li class="list-group-item list-group-item-warning"><span class="badge">mohou nastat krátkodobé výpadky</span> IMAP (přijímání mailů pomocí klienta)</li>
+                            <li class="list-group-item list-group-item-warning"><span class="badge">mohou nastat krátkodobé výpadky</span> SMTP (odesílání mailů pomocí klienta)</li>
+                            <li class="list-group-item list-group-item-success"><span class="badge">OK</span> Administrace e-mailů</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <h2>Ostatní</h2>
+                    <div class="panel panel-warning">
+                        <div class="panel-heading"><h2 class="panel-title">Veřejné weby</h2></div>
+                        <!--<div class="panel-body"></div>-->
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-success"><span class="badge">OK</span> <a href="http://www.zeleni.cz">Hlavní web Strany zelených</a></li>
+                            <li class="list-group-item list-group-item-warning"><span class="badge">není 100% funkční</span> <a href="http://dary.zeleni.cz">Dary</a></li>
+                            <li class="list-group-item list-group-item-success"><span class="badge">OK</span> <a href="http://www.zachovejmelimity.cz">Zachovejme limity!</a></li>
+                            <li class="list-group-item list-group-item-success"><span class="badge">OK</span> <a href="http://www.ceskaspoust.cz">Česká (s)poušť</a></li>
+                            <li class="list-group-item list-group-item-success"><span class="badge">OK</span> <a href="http://www.11cisel.cz">11 čísel</a></li>
+                            <!--<iframe src="https://docs.google.com/forms/d/1lSy0vS1ZQDkqMNZRoafYzdbP0UyW_i67WTFjtya5O9o/viewform?embedded=true&amp;entry.1406315924=www.zeleni.cz" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
+                        </ul>
+                    </div>
+
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h2 class="panel-title">Interní služby</h2></div>
+                        <!--<div class="panel-body"></div>-->
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-success"><span class="badge">OK</span> Rozesílače (mailman)</li>
+                            <li class="list-group-item list-group-item-success"><span class="badge">OK</span> <a href="http://forum.zeleni.cz">Fórum</a></li>
+                            <li class="list-group-item list-group-item-success"><span class="badge">OK</span> <a href="http://i.zeleni.cz">Intranet</a></li>
+                            <li class="list-group-item list-group-item-success"><span class="badge">OK</span> <a href="http://intranet.zeleni.cz">Starý intranet</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <hr>
 
             <footer>
-                <p>Obsah webu můžete volně šířit podle licence <a href="http://creativecommons.org/licenses/by/3.0/cz/">Creative commons Uveďte autora 3.0</a>.<br>
-                <b>Podporujeme svobodné šíření myšlenek.</b> | Kontakt: it@zeleni.cz - <a href="http://www.zeleni.cz/kontakt/">Další kontakty</a>.</p>
+                <p>
+                    Obsah webu můžete volně šířit podle licence <a href="http://creativecommons.org/licenses/by/3.0/cz/">Creative commons Uveďte autora 3.0</a>.
+                    <br>
+                    <b>Podporujeme svobodné šíření myšlenek.</b>
+                    <br>
+                    <a href="mailto:it@zeleni.cz">it@zeleni.cz</a> &nbsp; <a href="http://www.zeleni.cz/kontakt/">další kontakty</a>.
+                </p>
             </footer>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
