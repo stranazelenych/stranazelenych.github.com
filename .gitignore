@@ -1,0 +1,12 @@
+# noise
+.idea/*
+.DS_Store
+.tags
+.tags_sorted_by_file
+.DS_Store
+.sublime-grunt.cache
+.editorconfig
+.ftpauth
+.buildpath
+.project
+.settings/
